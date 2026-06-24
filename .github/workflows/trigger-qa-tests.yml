@@ -3,6 +3,10 @@ name: Trigger QA Cypress Tests
 on:
   push:
     branches:
+      - develop
+
+  pull_request:
+    branches:
       - main
 
 jobs:
