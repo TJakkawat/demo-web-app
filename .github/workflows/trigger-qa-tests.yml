@@ -14,6 +14,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Wait for GitHub Pages deploy
+        run: sleep 30
+
       - name: Trigger QA Repo
         run: |
           curl -X POST \
